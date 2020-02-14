@@ -2,8 +2,8 @@
 
 //Button on click function
 
-// $("button").on("click",function(e){
-    // e.preventDefault();
+$("button").on("click",function(e){
+    e.preventDefault();
     var search = "Bill";
     var limit= ;
     var start = ;
@@ -75,4 +75,4 @@
     })
 
 
-// });
+});
