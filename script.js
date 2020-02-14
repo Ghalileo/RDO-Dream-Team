@@ -4,10 +4,10 @@
 
 $("button").on("click",function(e){
     e.preventDefault();
-    var search = "Bill";
-    var limit= ;
-    var start = ;
-    var end = ;
+    var search = $(".search").value;
+    var limit= $(".number").value;
+    var start = (".start").value;
+    var end = $(".end").value;
     var urlSearch = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search +"&begin_date="+ start +"0101" + "&end_date="+ end + "0101" + "&api-key=GO9MVmPLyYkoem03Y2wiEgLQuDM3iF3Y";
         
     $.ajax({
