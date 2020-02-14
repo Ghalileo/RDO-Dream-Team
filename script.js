@@ -34,11 +34,11 @@ $(".searchBtn").on("click",function(e){
 
             // Create new card for Title and author and numbers
             var newCard =$("<div>") ;
-
+            newCard.attr("class", "row");
             //Create new div for numbers
             var numbers = $("<div>")
             //give a class of col-3
-            numbers.attr("class", "col-3")
+            numbers.attr("class", "col-3 numero rounded-circle border border-dark")
                 //dynamically create numbers
                 numbers.text(i+1)
             //append number div to new card

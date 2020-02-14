@@ -13,3 +13,10 @@ h2 {
     padding-left: 30px;
     
 }
+
+.numero{
+    text-align: center;
+    font-size: 50px;
+    background-color: darkblue;
+    color: white;
+}
