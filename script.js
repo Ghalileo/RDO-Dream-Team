@@ -2,14 +2,21 @@
 
 //Button on click function
 
-$("button").on("click",function(e){
+$(".searchBtn").on("click",function(e){
     e.preventDefault();
-    var search = $(".search").value;
-    var limit= $(".number").value;
-    var start = (".start").value;
-    var end = $(".end").value;
+    var search = $(".search").val();
+    
+    var limit= $(".number").val();
+    
+
+    var start = $(".start").val();
+   
+
+    var end = $(".end").val();
+  
+
     var urlSearch = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search +"&begin_date="+ start +"0101" + "&end_date="+ end + "0101" + "&api-key=GO9MVmPLyYkoem03Y2wiEgLQuDM3iF3Y";
-        
+
     $.ajax({
         url: urlSearch,
         method:"GET"
@@ -50,7 +57,7 @@ $("button").on("click",function(e){
             //create new <h4> for the Title 
             var newTitle = $("<h4>")
                 //dynamically fill h4 text with title
-                newAuthor.text(title)
+                newTitle.text(title)
 
             //create a new <p> for the author
             var newAuthor = $("<p>")
